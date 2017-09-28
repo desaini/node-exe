@@ -47,6 +47,10 @@ app.get('/about', (req, res) => {
 	});
 });
 
+app.get('/projects', (req, res) => {
+	res.render('project.hbs');
+})
+
 app.get('/bad', (req, res) => {
 	res.send({ errorMessage: '<h1 style="color:red">Request cannot be fulfilled</h1>' });
 });
